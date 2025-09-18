@@ -23,7 +23,7 @@ const Footer = () => {
   return (
     <div className="flex w-full items-center justify-center bg-[#eeecec]">
       <div className=" flex w-full  items-center justify-center overflow-hidden">
-        <div className=" flex w-full flex-col items-center  justify-center md:mt-8 md:min-w-[650px] ">
+        <div className=" flex w-full flex-col items-center  justify-center md:mt-8 md:min-w-[650px]">
           <div className="flex w-fit flex-col justify-center gap-2 px-6 md:mt-8  md:w-full  md:flex-row md:items-start md:justify-around md:px-20 ">
             <div className="mt-4 flex h-32 items-center justify-center text-2xl md:mt-0  md:h-auto md:w-52">
               <Image
@@ -55,9 +55,12 @@ const Footer = () => {
                 <Link href="/our-brands">
                   <p className="">Our Brands </p>
                 </Link>
+                <Link href={`${ContactInfo?.baseUrl}gallery`}>
+                  <p className="">Gallery </p>
+                </Link>
               </div>
             </div>
-            <div className="mt-10  flex flex-col items-center   justify-center text-lg md:mt-0  md:w-[26rem]">
+             <div className="mt-10  flex flex-col items-center   justify-center text-lg md:mt-0  md:w-[26rem]">
               <div className=" w-fit border-b-2 border-minor text-3xl font-semibold text-main">
                 Our Services
               </div>
